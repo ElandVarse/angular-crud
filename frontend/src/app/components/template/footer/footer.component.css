@@ -1,0 +1,31 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer > span{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.footer span a{
+    text-decoration: none;
+    font-weight: bold;
+    transition: .2s;
+    color: #b14c56
+}
+
+.footer span a:hover{
+    color: #d15360
+}
+
+@media only screen and (max-width: 600px) {
+    .footer{
+        justify-content: center;
+    }
+}
+
+
