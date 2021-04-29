@@ -4,6 +4,7 @@
 
     display: flex;
     justify-content: flex-end;
+    height: 40px;
 }
 
 .footer > span{
@@ -23,8 +24,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .footer{
-        justify-content: center;
+    .footer span{
+        font-size: 14px;
     }
 }
 

@@ -3,10 +3,26 @@
     width: 200px;
 }
 
-.sidenav a{
+.sidenav a, .sidenav i{
     color: #fff;
 }
 
-.sidenav i{
-    padding-right: 10px;
+.content {
+    padding: 16px; 
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 720px) {
+    
+    .sidenav {
+        width: 40px;
+    }
+    
+    .sidenav i{
+        margin-top: 24px;
+    }
+    
+    .sidenav a{
+        display: none;
+    }
 }

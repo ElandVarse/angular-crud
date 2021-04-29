@@ -11,3 +11,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .v-middle{
     vertical-align: middle;
 }
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pointer{
+    cursor: pointer;
+}
