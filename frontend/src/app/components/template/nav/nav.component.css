@@ -7,22 +7,26 @@
     color: #fff;
 }
 
+.sidenav i{
+    margin-right: 4px;
+}
+
 .content {
-    padding: 16px; 
-    background-color: #fff;
+    padding: 16px;
 }
 
 @media only screen and (max-width: 720px) {
-    
     .sidenav {
         width: 40px;
     }
-    
-    .sidenav i{
-        margin-top: 24px;
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
-    .sidenav a{
-        display: none;
+    .item-text{
+        display:none;
     }
 }

@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: flex-start;
     height: 64px;
+    background-color: #fff;
 }
 
 .header a{

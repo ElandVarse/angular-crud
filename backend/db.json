@@ -19,6 +19,31 @@
       "name": "Geladeira",
       "price": "1913.99",
       "id": 4
+    },
+    {
+      "name": "Produto de Teste",
+      "price": 125.98,
+      "id": 5
+    },
+    {
+      "name": "Produto de Teste",
+      "price": 125.98,
+      "id": 6
+    },
+    {
+      "name": "Produto de Teste",
+      "price": 125.98,
+      "id": 7
+    },
+    {
+      "name": "Veio da havan",
+      "price": "12.60",
+      "id": 8
+    },
+    {
+      "name": "Pretty good",
+      "price": "nice",
+      "id": 9
     }
   ]
 }
