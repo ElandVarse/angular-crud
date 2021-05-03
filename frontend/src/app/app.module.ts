@@ -43,8 +43,8 @@ registerLocaleData(localePt)
 		HomeComponent,
 		ProductCrudComponent,
 		ProductCreateComponent,
-  ProductReadComponent,
-  ProductUpdateComponent,
+        ProductReadComponent,
+        ProductUpdateComponent,
 	],
 	imports: [
 		BrowserModule,

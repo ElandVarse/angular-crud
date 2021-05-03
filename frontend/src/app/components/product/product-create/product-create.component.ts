@@ -1,7 +1,7 @@
-import { Product } from './../product.model';
+import { Product } from "./../product.model";
 import { Component, OnInit } from "@angular/core";
 import { ProductService } from "../product.service";
-import { Router } from '@angular/router';
+import { Router } from "@angular/router";
 
 @Component({
 	selector: "app-product-create",
@@ -9,27 +9,42 @@ import { Router } from '@angular/router';
 	styleUrls: ["./product-create.component.css"],
 })
 export class ProductCreateComponent implements OnInit {
-
     product: Product = {
-        name: '',
-        price: 0,
-    }
-    
-    constructor(private productService: ProductService, private router:Router) {}
+		name: "",
+		price: null,
+	};
 
-	ngOnInit(): void {
-    }
+	constructor(
+		private productService: ProductService,
+		private router: Router
+	) {}
 
-    createProduct(): void{
-        this.productService.create(this.product).subscribe(() => {
-            this.productService.showMessage('Produto criado!')
-            this.router.navigate(['/products'])
-        })
+	ngOnInit(): void {}
 
-        this.productService.showMessage('Produto criado')
-    }
- 
-    cancel(): void{
-        this.router.navigate(['/products'])
-    }
+	createProduct(): void {
+        if(this.product.name==="" && this.product.price===null ){
+            alert("Quer cadastrar nada?")
+            return
+        }
+        if(this.product.price === null){
+            alert("Epa, cadê o preço amigão!");
+            return
+        }
+        if(this.product.name === ""){
+            alert("Perala, e o nome?")
+            return
+        }
+		else {
+			this.productService.create(this.product).subscribe(() => {
+				this.productService.showMessage("Produto criado!");
+				this.router.navigate(["/products"]);
+			});
+		}
+
+		this.productService.showMessage("Produto criado");
+	}
+
+	cancel(): void {
+		this.router.navigate(["/products"]);
+	}
 }

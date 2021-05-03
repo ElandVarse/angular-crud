@@ -8,16 +8,20 @@
 }
 
 .sidenav i{
-    margin-right: 4px;
+    margin-right: 8px;
 }
 
 .content {
-    padding: 16px;
+    padding: 120px 200px;
 }
 
 @media only screen and (max-width: 720px) {
     .sidenav {
         width: 40px;
+    }
+
+    .sidenav i{
+        margin-left: 12px;
     }
 
     .nav-list{
@@ -28,5 +32,11 @@
     
     .item-text{
         display:none;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    .content{
+        padding: 120px 16px;
     }
 }
