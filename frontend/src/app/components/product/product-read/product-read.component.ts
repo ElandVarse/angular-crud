@@ -8,15 +8,21 @@ import { Component, OnInit } from "@angular/core";
 	styleUrls: ["./product-read.component.css"],
 })
 export class ProductReadComponent implements OnInit {
-	
-    products: Product[] = [];
-    displayedColumns = ['id', 'name', 'price']
+	products: Product[] = [];
+	displayedColumns = ["id", "name", "price", "action"];
 
 	constructor(private productService: ProductService) {}
 
 	ngOnInit(): void {
-        this.productService.read().subscribe(products => {
-            this.products = products
-        })
+		this.productService.read().subscribe((products) => {
+			this.products = products;
+		});
+	}
+
+	delete(id: number): void {
+        this.productService.delete(id).subscribe(() => {
+			this.productService.showMessage("Produto deletado com sucesso!");
+            location.reload();
+		});
     }
 }

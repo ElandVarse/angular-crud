@@ -1,49 +1,24 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Caneta BIC Preta",
-      "price": 5.89
+      "name": "Teste 1",
+      "price": "7.49",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Notebook Mac Pro",
-      "price": 12000.89
+      "name": "Teste 2",
+      "price": "3.99",
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "Samsung S20+",
-      "price": 5000.89
+      "name": "Produto 3",
+      "price": "1.99",
+      "id": 3
     },
     {
-      "name": "Geladeira",
-      "price": "1913.99",
+      "name": "Produto 4 ",
+      "price": "0.79",
       "id": 4
-    },
-    {
-      "name": "Produto de Teste",
-      "price": 125.98,
-      "id": 5
-    },
-    {
-      "name": "Produto de Teste",
-      "price": 125.98,
-      "id": 6
-    },
-    {
-      "name": "Produto de Teste",
-      "price": 125.98,
-      "id": 7
-    },
-    {
-      "name": "Veio da havan",
-      "price": "12.60",
-      "id": 8
-    },
-    {
-      "name": "Pretty good",
-      "price": "nice",
-      "id": 9
     }
   ]
 }

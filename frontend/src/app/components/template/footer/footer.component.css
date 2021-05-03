@@ -5,7 +5,8 @@
     display: flex;
     justify-content: flex-end;
     height: 40px;
-    background-color: #f9f9f9;
+    background-color: transparent;
+    z-index: 1;
 }
 
 .footer > span{
